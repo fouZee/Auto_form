@@ -1,61 +1,274 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-US" class=" js csstransitions">
   <head>
-    <!-- Required meta tags -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-    <title>Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Absensi</title>
+    <link href="httpss://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet" type="text/css">
+    <link href="httpss://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet" type="text/css">
+    <link href="css1/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css1/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css1/style.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/modernizr.custom.97074.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
   </head>
   <body>
+    <div class="wrapper">
+      <div id="loading" style="display: none;">
+        <div id="ascensor" style="position: absolute; overflow: hidden; width: 958px; height: 714px;">
+          <section class ="section home ascensorFloor" id="ascensorFloor0" style="position: absolute; overflow: auto; width: 958px; height: 714px; left: 958px; top: 714px;"></section>
+      </div>
+    </div>
+    <div class="center-box" style="padding-top: 64px;">
       <div class="container">
-      <div class="row mt-5">
-          <h1>Form Otomatis</h1>
-    </div>
-<div class="row">
-<div class="col-md-12">
-    <form>
-        <div class="form-group">
-          <label for="exampleInputEmail1">UID</label>
-          <input type="email" class="form-control" name ="uid" id="uid" aria-describedby="emailHelp" readonly>
-          <small id="emailHelp" class="form-text text-muted">Kolom diisi otomatis</small>
-        </div>
-        <div class="form-group">
-          <label for="exampleInputPassword1">Username</label>
-          <input type="username" class="form-control" name ="username" id="username">
-        </div>
-        <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control" name ="password" id="password">
+        <div class="row">
+          <div class="social">
+            <h2 class="h2">
+            Absensi Menggunakan RFID
+            </h2>
           </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
+          <div class="tile"></div>
+          <div class="tile tile-item tile-client">
+          <a class="ascensorLink tile-nav">
+            <h5 class="h5">Masuk</h5>
+            <i class="fa fa-sign-in fa-4x">
+            </i>
+          </a>
+        </div>
+        </div>
+      </div>
     </div>
-</div>
-</div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script>
-        function cekUID(){
-            $.ajax({
-                type : "GET",
-                url : "entry.php",
-                cache : false,
-                success: function(response){
-                    console.log(response);
-                    $("#uid").val(response)
-                }
-            });
-        }
-        setInterval(cekUID, 2000);
-    </script>
-
-</body>
-
-</html>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="js/jquery.ascensor.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.mixitup.min.js"></script>
+    <script src="js/jquery.hoverdir.js"></script>
+    <script src="js/jquery.placeholder.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+  </body>
+</html> 
+<style type="text/css">
+  body {
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    background-image: url("https://img.freepik.com/free-vector/white-abstract-background_23-2148817571.jpg?w=2000");
+  }
+  ol, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+  a, a:hover {
+    text-decoration: none;
+}
+  .home .container {
+    max-width: 940px;
+    padding-bottom: 0;
+}
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+  .tile {
+    width: 24%;
+    float: left;
+    margin: 0.5%;
+    position: relative;
+}
+  .tile:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+  } 
+  .tile-client {
+  background: #49E035;
+}
+  .tile:nth-child(4n+1) {
+    clear: both;
+}
+  .tile-item {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    z-index: 10;
+}
+  .tile-item a,
+  .tile-item a:hover {
+    color: #ffffff;
+}
+  .tile-item:hover {
+    color: #ffffff;
+    -webkit-box-shadow: -3px 3px 3px 1px #858585;
+    -moz-box-shadow: -3px 3px 3px 1px #858585;
+    -o-box-shadow: -3px 3px 3px 1px #858585;
+    box-shadow: -3px 3px 3px 1px #858585;
+    -webkit-transform: translate3d(6px, -6px, 0);
+    -moz-transform: translate3d(6px, -6px, 0);
+    -ms-transform: translate3d(6px, -6px, 0);
+    -o-transform: translate3d(6px, -6px, 0);
+    transform: translate3d(6px, -6px, 0);
+    z-index: 100;
+}
+  .tile-item i {
+    display: block;
+    padding-top: 9%;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+  .tile-item:hover i {
+    -webkit-transform: scale(1.2) rotate(360deg);
+    -moz-transform: scale(1.2) rotate(360deg);
+    -ms-transform: scale(1.2) rotate(360deg);
+    -o-transform: scale(1.2) rotate(360deg);
+    transform: scale(1.2) rotate(360deg);
+}
+  .tile-nav {
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    display: block;
+    font-size: 19.2px;
+    text-align: center;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .tile .ascensorLink {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: block;
+    position: absolute;
+}
+  .tile .ascensorLink .h5 {
+    font-size: 18px;
+    line-height: 2;
+    font-family: 'Open Sans', sans-serif;
+}
+  .h5 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+  .tile-portfolio {
+    background: #00c6ff;
+}
+  .tile-about {
+    background: #f39c12;
+}
+  .tile-service {
+    background: #FD2561;
+}
+  .tile-team {
+    background: #20b9cb;
+}
+  .tile-client {
+    background: #49E035;
+}
+  .tile-blog {
+    background: #FF08FF;
+}
+  .tile-contact {
+    background: #47E4C4;
+}
+  .tile-follow {
+    background: #3cf;
+}
+  .h1, .h2, .h3, .h4 {
+    color: #555555;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Quicksand', sans-serif;
+}
+  .h2 {
+    color: #ffffff;
+    font-weight: 400;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 34px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .h3 {
+    color: #ffffff;
+    padding-bottom: 5px;
+}
+  .h4 {
+    color: #FFFFFF;
+    margin: 20px 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #FDFDFD;
+}
+  .lead {
+    color: #555555;
+    text-align: center;
+}
+  .metro-hr {
+    width: 100%;
+    height: 1px;
+    float: left;
+    border: none;
+    background: #e1e1e1;
+    margin: 40px 0 40px 0;
+      position: relative;
+}
+  .metro-hr:before {
+    width: 25%;
+    height: 1px;
+    content: '';
+    left: 0;
+    top: 0;
+    display: block;
+    position: absolute;
+    background: #2A90FF;
+}
+  .social {
+    background: #005288;
+    padding: 10px 0 20px 0;
+    margin: 0 0.5% 0.5% 0.5%;
+  }
+  .container:before, .container:after {
+    display: table;
+    content: " ";
+  }
+  .container:after {
+    clear: both;
+  }
+  .row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+  .row:before, .row:after {
+    display: table;
+    content: " ";
+}
+  .row:after {
+    clear: both;
+}
+  .fa-sign-in:before {
+    content: "\f090";
+}
+  @font-face{font-family:'FontAwesome';src:url('../fonts/fontawesome-webfont.eot?v=4.0.0');src:url('../fonts/fontawesome-webfont.eot?#iefix&v=4.0.0') format('embedded-opentype'),url('../fonts/fontawesome-webfont.woff?v=4.0.0') format('woff'),url('../fonts/fontawesome-webfont.ttf?v=4.0.0') format('truetype'),url('../fonts/fontawesome-webfont.svg?v=4.0.0#fontawesomeregular') format('svg');font-weight:normal;font-style:normal}.fa{display:inline-block;font-family:FontAwesome;font-style:normal;font-weight:normal;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+  .fa-sign-in:before{content:"\f090"}
+  
+</style>  
